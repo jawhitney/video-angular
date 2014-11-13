@@ -1,12 +1,12 @@
 <div class="row">
     <div class="col-sm-12">
-        <h2>VIDEOS ({{ (videos | filter:filterByProperties).length }})</h2>
+        <h2>VIDEOS ({{ (videos | filter:search).length }})</h2>
     </div>
 </div>
 <div class="row">
     <div class="col-sm-8">
         <div id="video-list" class="row">
-            <div class="col-sm-4" ng-repeat="v in filtered = (videos | filter:filterByProperties)">
+            <div class="col-sm-4" ng-repeat="v in filtered = (videos | filter:search | filter:filterByProperties)">
                 <a ng-href="#/video/{{ v.id }}">
                     <div class="panel panel-default">
                         <div class="panel-body">
@@ -25,11 +25,10 @@
         <div class="row">
             <div class="col-sm-12">
                 <h3>Days</h3>
-                <ul class="list-group">
-                    <li class="list-group-item" ng-repeat="day in days" ng-init="filter['day']={}">
-                        <input type="checkbox" ng-model="filter['day'][day.name]" />&nbsp;{{ day.name }}
-                    </li>
-                </ul>
+                <select ng-model="search.day">
+                    <option value="">-- All Days --</option>
+                    <option ng-repeat="day in days" value="{{ day.name }}">{{ day.name }}</option>
+                </select>
             </div>
         </div>
         <!-- Channel Filter -->
