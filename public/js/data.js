@@ -1,3 +1,10 @@
+var days = [
+    { "name": "Monday" },
+    { "name": "Tuesday" },
+    { "name": "Wednesday" },
+    { "name": "Thursday" }
+];
+
 var channels = [
     { "name": 1 },
     { "name": 2 },

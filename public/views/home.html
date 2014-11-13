@@ -1,19 +1,37 @@
 <div class="row">
+    <div class="col-sm-12">
+        <h2>VIDEOS ({{ (videos | filter:filterByProperties).length }})</h2>
+    </div>
+</div>
+<div class="row">
     <div class="col-sm-8">
         <div id="video-list" class="row">
             <div class="col-sm-4" ng-repeat="v in filtered = (videos | filter:filterByProperties)">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <img ng-src="../{{ screenshot }}"/>
+                <a ng-href="#/video/{{ v.id }}">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <img ng-src="../{{ v.screenshot }}"/>
+                        </div>
+                        <div class="panel-footer">
+                            {{ v.title }}
+                        </div>
                     </div>
-                    <div class="panel-footer">
-                        {{ v.title }}
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
-    </div> <!-- Close: video view -->
+    </div>
     <div class="col-sm-4">
+        <!-- Day Filter -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Days</h3>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="day in days" ng-init="filter['day']={}">
+                        <input type="checkbox" ng-model="filter['day'][day.name]" />&nbsp;{{ day.name }}
+                    </li>
+                </ul>
+            </div>
+        </div>
         <!-- Channel Filter -->
         <div class="row">
             <div class="col-sm-12">
