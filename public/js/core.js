@@ -1,43 +1,23 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngRoute']);
 
-app.controller('myCtrl', function ($scope) {
-    $scope.channels = [
-        { "name": 1 },
-        { "name": 2 },
-        { "name": 3 }
-    ];
+app.config(function($routeProvider) {
+    $routeProvider
 
-    $scope.industries = [
-        { "name": "Financial Services" },
-        { "name": "Healthcare & Life Sciences" },
-        { "name": "High Tech" },
-        { "name": "Higher Education" },
-        { "name": "Manufacturing" },
-        { "name": "Non-Profit" },
-        { "name": "Retail & Consumer Goods" }
-    ];
+    .when('/', {
+        templateUrl: 'views/home.html',
+        controller: 'homeController'
+    })
 
-    $scope.products = [
-        { "name": "Sales Cloud" },
-        { "name": "Service Cloud" },
-        { "name": "Marketing Cloud" },
-        { "name": "Salesforce1 Platform" },
-        { "name": "Analytics Cloud" },
-        { "name": "App Exchange" },
-        { "name": "Community Cloud" },
-        { "name": "Data.com" },
-        { "name": "Desk.com" },
-        { "name": "Force.com" },
-        { "name": "Heroku" },
-        { "name": "Pardot" },
-        { "name": "Premier Success" },
-        { "name": "Salesforce Chatter" },
-        { "name": "Salesforce Identity" },
-        { "name": "Salesforce Sandbox" },
-        { "name": "Salesforce1 Mobile" },
-        { "name": "Work.com" }
-    ];
+    .when('/video', {
+        templateUrl: 'views/video.html',
+        controller: 'videoController'
+    });
+});
 
+app.controller('homeController', function ($scope) {
+    $scope.channels = channels,
+    $scope.industries = industries,
+    $scope.products = products,
     $scope.videos = [
         { "id": 1, "title": "Video 1", "screenshot": "images/video1.jpg", "day": "Monday", "channel": [1,2], "industry": "Financial Services", "product": "Sales Cloud" },
         { "id": 2, "title": "Video 2", "screenshot": "images/video2.jpg", "day": "Tuesday", "channel": 2, "industry": ["Healthcare & Life Sciences", "High Tech"], "product": "Service Cloud" },
@@ -45,8 +25,7 @@ app.controller('myCtrl', function ($scope) {
         { "id": 4, "title": "Video 4", "screenshot": "images/video4.jpg", "day": "Monday", "channel": [1,2], "industry": "Financial Services", "product": "Sales Cloud" },
         { "id": 5, "title": "Video 5", "screenshot": "images/video5.jpg", "day": "Tuesday", "channel": 2, "industry": ["Healthcare & Life Sciences", "High Tech"], "product": "Service Cloud" },
         { "id": 6, "title": "Video 6", "screenshot": "images/video6.jpg", "day": "Wednesday", "channel": 3, "industry": "High Tech", "product": ["Marketing Cloud", "Sales Cloud"] }
-    ];
-
+    ],
     $scope.filter = {};
 
     $scope.filterByProperties = function (video) {
@@ -100,4 +79,8 @@ app.controller('myCtrl', function ($scope) {
         }
         return true;
     }
+});
+
+app.controller('videoController', function($scope) {
+    $scope.message = 'Hello world, I\'m a video.';
 });
