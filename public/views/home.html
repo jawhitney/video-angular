@@ -35,14 +35,11 @@
                     <li class="list-group-item" ng-repeat="channel in channels" ng-init="filter['channel']={}">
                         <input type="checkbox" ng-model="filter['channel'][channel.name]" />&nbsp;{{ channel.name }}
                     </li>
-<!--                     <li class="list-group-item" ng-repeat="channel in channels">
-                        <input type="checkbox" ng-model="search.channel" ng-true-value="{{ channel.name }}" ng-false-value="0" />&nbsp;{{ channel.name }}
-                    </li> -->
                 </ul>
             </div>
         </div>
         <!-- Industry Filter -->
-<!--         <div class="row">
+        <div class="row">
             <div class="col-sm-12">
                 <h3>Industries</h3>
                 <ul class="list-group">
@@ -51,9 +48,9 @@
                     </li>
                 </ul>
             </div>
-        </div> -->
+        </div>
         <!-- Product Filter -->
-<!--         <div class="row">
+        <div class="row">
             <div class="col-sm-12">
                 <h3>Products</h3>
                 <ul class="list-group">
@@ -62,6 +59,6 @@
                     </li>
                 </ul>
             </div>
-        </div> -->
+        </div>
     </div> <!-- Close: filters -->
 </div> <!-- Close: main row-->

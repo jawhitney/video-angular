@@ -1,4 +1,8 @@
 [
     { "id": 1, "title": "Video 1", "screenshot": "images/video1.jpg", "day": "Monday", "channel": 1, "industry": "Financial Services", "product": "Sales Cloud" },
-    { "id": 2, "title": "Video 2", "screenshot": "images/video2.jpg", "day": "Tuesday", "channel": [2,3], "industry": "Healthcare & Life Sciences", "product": "Service Cloud" }
+    { "id": 2, "title": "Video 2", "screenshot": "images/video2.jpg", "day": "Tuesday", "channel": 2, "industry": "Healthcare & Life Sciences", "product": "Service Cloud" },
+    { "id": 3, "title": "Video 3", "screenshot": "images/video3.jpg", "day": "Wednesday", "channel": 3, "industry": "High Tech", "product": "Sales Cloud" },
+    { "id": 4, "title": "Video 4", "screenshot": "images/video4.jpg", "day": "Thursday", "channel": 2, "industry": "Financial Services", "product": "Sales Cloud" },
+    { "id": 5, "title": "Video 5", "screenshot": "images/video5.jpg", "day": "Tuesday", "channel": 2, "industry": ["Healthcare & Life Sciences", "Financial Services"], "product": "Service Cloud" },
+    { "id": 6, "title": "Video 6", "screenshot": "images/video6.jpg", "day": "Wednesday", "channel": [2,3], "industry": "High Tech", "product": "Marketing Cloud" }
 ]
