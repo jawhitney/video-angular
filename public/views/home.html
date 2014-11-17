@@ -1,10 +1,6 @@
 <div class="row">
-    <div class="col-sm-12">
-        <h2>VIDEOS ({{ (videos | filter:search).length }})</h2>
-    </div>
-</div>
-<div class="row">
     <div class="col-sm-8">
+        <h2>VIDEOS ({{ (videos | filter:search | filter:filterByProperties).length }})</h2>
         <div id="video-list" class="row">
             <div class="col-sm-4" ng-repeat="v in filtered = (videos | filter:search | filter:filterByProperties)">
                 <a ng-href="#/video/{{ v.id }}">
@@ -39,11 +35,14 @@
                     <li class="list-group-item" ng-repeat="channel in channels" ng-init="filter['channel']={}">
                         <input type="checkbox" ng-model="filter['channel'][channel.name]" />&nbsp;{{ channel.name }}
                     </li>
+<!--                     <li class="list-group-item" ng-repeat="channel in channels">
+                        <input type="checkbox" ng-model="search.channel" ng-true-value="{{ channel.name }}" ng-false-value="0" />&nbsp;{{ channel.name }}
+                    </li> -->
                 </ul>
             </div>
         </div>
         <!-- Industry Filter -->
-        <div class="row">
+<!--         <div class="row">
             <div class="col-sm-12">
                 <h3>Industries</h3>
                 <ul class="list-group">
@@ -52,9 +51,9 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
         <!-- Product Filter -->
-        <div class="row">
+<!--         <div class="row">
             <div class="col-sm-12">
                 <h3>Products</h3>
                 <ul class="list-group">
@@ -63,6 +62,6 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </div> <!-- Close: filters -->
 </div> <!-- Close: main row-->

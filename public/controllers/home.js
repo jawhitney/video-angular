@@ -21,17 +21,23 @@ app.controller('homeController', ['$scope', '$http', function ($scope, $http) {
         for (var prop in $scope.filter) {
             if (noSubFilter($scope.filter[prop])) continue;
 
-            if (angular.isArray(video[prop])) {
-                if (!$.inArray(prop, video[prop])) {
+            if (!$scope.filter[prop][video[prop]]) {
+                if (!angular.isArray(video[prop])) {
                     matches = false;
                     break;
+                } else {
+                    for (var key in video[prop]) {
+                        if ($scope.filter[prop][video[prop][key]]) {
+                            matches = true;
+                            break;
+                        } else {
+                            matches = false;
+                        }
+                    }
                 }
             }
-            else if (!$scope.filter[prop][video[prop]]) {
-                matches = false;
-                break;
-            }
-        }
+        }        
+
         return matches;
     };
     
