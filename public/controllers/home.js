@@ -3,13 +3,13 @@ app.controller('homeController', ['$scope', '$http', function ($scope, $http) {
     $scope.channels = channels;
     $scope.industries = industries;
     $scope.products = products;
+    $scope.itemsPerPage = 9;
     
     $http.get('/api/videos')
         .success(function(data) {
             $scope.videos = data;
         })
         .error(function(data) {
-            $scope.videos = [];
             console.log('Error: ' + data);  
         });
 
@@ -40,11 +40,21 @@ app.controller('homeController', ['$scope', '$http', function ($scope, $http) {
 
         return matches;
     };
+
+    $scope.loadMore = function() {
+        $scope.itemsPerPage += 9;
+    };
+
+    $scope.nextPageDisabledClass = function() {
+        if ($scope.filtered && $scope.videos) {
+            return $scope.filtered.length < $scope.itemsPerPage ? 'ng-hide' : '';
+        }
+    };
     
     function noSubFilter(subFilterObj) {
         for (var key in subFilterObj) {
             if (subFilterObj[key]) return false;
         }
         return true;
-    }
+    };
 }]);

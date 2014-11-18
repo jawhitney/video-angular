@@ -1,8 +1,134 @@
 [
-    { "id": 1, "title": "Video 1", "screenshot": "images/video1.jpg", "day": "Monday", "channel": 1, "industry": "Financial Services", "product": "Sales Cloud" },
-    { "id": 2, "title": "Video 2", "screenshot": "images/video2.jpg", "day": "Tuesday", "channel": 2, "industry": "Healthcare & Life Sciences", "product": "Service Cloud" },
-    { "id": 3, "title": "Video 3", "screenshot": "images/video3.jpg", "day": "Wednesday", "channel": 3, "industry": "High Tech", "product": "Sales Cloud" },
-    { "id": 4, "title": "Video 4", "screenshot": "images/video4.jpg", "day": "Thursday", "channel": 2, "industry": "Financial Services", "product": "Sales Cloud" },
-    { "id": 5, "title": "Video 5", "screenshot": "images/video5.jpg", "day": "Tuesday", "channel": 2, "industry": ["Healthcare & Life Sciences", "Financial Services"], "product": "Service Cloud" },
-    { "id": 6, "title": "Video 6", "screenshot": "images/video6.jpg", "day": "Wednesday", "channel": [2,3], "industry": "High Tech", "product": "Marketing Cloud" }
+   {
+      "id":1,
+      "title":"Video 1",
+      "screenshot":"images/video1.jpg",
+      "day":"Monday",
+      "channel":1,
+      "industry":"Financial Services",
+      "product":"Sales Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":2,
+      "title":"Video 2",
+      "screenshot":"images/video2.jpg",
+      "day":"Tuesday",
+      "channel":2,
+      "industry":"Healthcare & Life Sciences",
+      "product":"Service Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":3,
+      "title":"Video 3",
+      "screenshot":"images/video3.jpg",
+      "day":"Wednesday",
+      "channel":3,
+      "industry":"High Tech",
+      "product":"Sales Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":4,
+      "title":"Video 4",
+      "screenshot":"images/video4.jpg",
+      "day":"Thursday",
+      "channel":2,
+      "industry":"Financial Services",
+      "product":"Sales Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":5,
+      "title":"Video 5",
+      "screenshot":"images/video5.jpg",
+      "day":"Tuesday",
+      "channel":2,
+      "industry":[
+         "Healthcare & Life Sciences",
+         "Financial Services"
+      ],
+      "product":"Service Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":6,
+      "title":"Video 6",
+      "screenshot":"images/video6.jpg",
+      "day":"Wednesday",
+      "channel":[
+         2,
+         3
+      ],
+      "industry":"High Tech",
+      "product":"Marketing Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":7,
+      "title":"Video 7",
+      "screenshot":"images/video7.jpg",
+      "day":"Monday",
+      "channel":1,
+      "industry":"Financial Services",
+      "product":"Sales Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":8,
+      "title":"Video 8",
+      "screenshot":"images/video8.jpg",
+      "day":"Tuesday",
+      "channel":2,
+      "industry":"Healthcare & Life Sciences",
+      "product":"Service Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":9,
+      "title":"Video 9",
+      "screenshot":"images/video9.jpg",
+      "day":"Wednesday",
+      "channel":3,
+      "industry":"High Tech",
+      "product":"Sales Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":10,
+      "title":"Video 10",
+      "screenshot":"images/video10.jpg",
+      "day":"Thursday",
+      "channel":2,
+      "industry":"Financial Services",
+      "product":"Sales Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":11,
+      "title":"Video 11",
+      "screenshot":"images/video11.jpg",
+      "day":"Tuesday",
+      "channel":2,
+      "industry":[
+         "Healthcare & Life Sciences",
+         "Financial Services"
+      ],
+      "product":"Service Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   },
+   {
+      "id":12,
+      "title":"Video 12",
+      "screenshot":"images/video12.jpg",
+      "day":"Wednesday",
+      "channel":[
+         2,
+         3
+      ],
+      "industry":"High Tech",
+      "product":"Marketing Cloud",
+      "description": "Lo-fi Cosby sweater Banksy before they sold out, Echo Park selfies twee bicycle rights biodiesel trust fund street art Brooklyn PBR. Wayfarers disrupt flexitarian street art mlkshk polaroid. Direct trade tofu ennui Williamsburg, cornhole meh crucifix polaroid Pinterest. Typewriter pug kitsch meggings 3 wolf moon occupy Marfa, Intelligentsia gluten-free mustache ugh. Actually Pitchfork next level church-key, Tumblr before they sold out meggings. Master cleanse keytar cred, squid trust fund DIY church-key forage drinking vinegar gastropub mixtape before they sold out bicycle rights organic occupy. Asymmetrical vegan cray kogi, Williamsburg mustache tilde whatever authentic direct trade."
+   }
 ]

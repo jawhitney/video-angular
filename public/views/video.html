@@ -1,6 +1,13 @@
-<div class="jumbotron text-center">
-	<h1>Video Page</h1>
-	
-	<p>{{ video.id }}</p>
-	<p>{{ video.title }}</p>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="jumbotron text-center">
+			<h1>{{ video.title }}</h1>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">	
+		<h2>About this video</h2>
+		<p>{{ video.description }}</p>
+	</div>
 </div>
